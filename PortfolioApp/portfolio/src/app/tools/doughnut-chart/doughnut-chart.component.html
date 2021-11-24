@@ -1,0 +1,10 @@
+<div class="card" style="border-left: 0;border-bottom: 0;border-right:0;margin-left: 0%;">
+    <div class="card-body" style="display: block">
+        <canvas baseChart height="80vh" width="80vw" [data]="demodoughnutChartData" [labels]="doughnutChartLabels" [options]="chartOptions" 
+            [chartType]="doughnutChartType" 
+            [colors]="chartColors"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"
+            ></canvas>
+    </div>
+</div>
